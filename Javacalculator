@@ -1,0 +1,68 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args) {
+
+int n1;
+int n2;
+int n3;
+int cal;
+int minus;
+double quotient;
+double product;
+double remainder;
+
+System.out.println("Enter two numbers");
+
+Scanner input = new Scanner(System.in);
+System.out.println("Enter first number-");
+n1 = input.nextInt();
+System.out.println("Enter second number-");
+n2 = input.nextInt();
+
+// selecting operation//
+System.out.println("Select Operation");
+
+System.out.println("1-Addition");
+System.out.println("2-Subtraction");
+System.out.println("3-Division");
+System.out.println("4-Multiplication");
+
+System.out.println("Select number");
+
+
+Scanner s = new Scanner(System.in);
+n3 = s.nextInt();
+
+//calculation//
+
+if(n3==1){
+cal = n1+n2;
+System.out.println("The answer is: " +cal);
+
+} 
+
+if(n3==2){
+    minus = n1-n2;
+    System.out.println("The answer is: " +minus);
+
+}
+
+if(n3==3){
+  quotient = (double) n1 / n2;
+    remainder = n1 % n2;
+
+
+    System.out.println("The answer is: " +quotient);
+  
+}
+if(n3==4){
+    product = n1*n2;
+    System.out.println("The answer is: " +product);
+}
+
+    }
+
+}
+
+
+
